@@ -1,0 +1,33 @@
+.add-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    background-color: rgb(209, 245, 151);
+    color: #3a3939;
+    font-family: 'Recursive', sans-serif;
+}
+
+.btn {
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.3rem;
+    padding: 4px 0px;
+    margin: 12px 100px;
+    outline: none;
+    border: 2px solid rgb(209, 245, 151);
+    border-radius: 4px;
+    color: rgb(209, 245, 151);
+    background-color: #3a3939;
+}
+
+.btn:hover {
+    background-color: rgb(209, 245, 151);
+    color: #3a3939;
+}

@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading {
+    font-size: 2.8em;
+    color: rgb(209, 245, 151);
+}

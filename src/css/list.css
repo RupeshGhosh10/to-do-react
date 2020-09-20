@@ -1,0 +1,59 @@
+.list-item {
+    display: flex;
+    justify-content: space-around;
+    border: 3px dashed rgb(209, 245, 151) ;
+    margin: 4px;
+    padding: 0px;
+    width: 560px;
+    height: 80px;
+}
+
+.list-to-do-item {
+    flex-grow: 1;
+    text-align: center;
+    color: rgb(209, 245, 151);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.list-tools {
+    border-left: 3px dashed rgb(209, 245, 151);
+    display: flex;
+    justify-content: center;
+}
+
+.strike {
+    position: relative;
+    display: inline-block;
+}
+
+.strike::before {
+    content: '';
+    border-bottom: 6px solid rgb(243, 110, 70, 0.8);
+    border-radius: 2px;
+    width: 100%;
+    position: absolute;
+    right: 0%;
+    top: 45%;
+}
+
+.btn-item {
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0px;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: 2px solid rgb(209, 245, 151);
+    border-radius: 100px;
+    color: rgb(209, 245, 151);
+    background-color: #3a3939;
+}
+
+.btn-item:hover {
+    background-color: rgb(209, 245, 151);
+    color: #3a3939;
+}
