@@ -1,7 +1,36 @@
 import React from 'react';
 import ListArray from './ListArray';
 import AddField from './AddField';
+import Particles from 'react-particles-js';
 import '../css/App.css';
+
+const particleOptions = {
+    "particles": {
+        "number": {
+            "value": 160,
+            "density": {
+                "enable": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "speed": 4,
+                "size_min": 0.3
+            }
+        },
+        "line_linked": {
+            "enable": false
+        },
+        "move": {
+            "random": true,
+            "speed": 1,
+            "direction": "top",
+            "out_mode": "out"
+        }
+    }
+}
 
 class App extends React.Component {
     constructor(props) {
@@ -43,6 +72,7 @@ class App extends React.Component {
     render() {
         return (
             <div className='main'>
+                <Particles className='particles' params={particleOptions}/>
                 <h1 className='heading'>To Do List</h1>
                 <AddField addToDoList={this.addToDoList} updateInputText={this.updateInputText} text={this.state.inputText}/>
                 <ListArray todo={this.state.todo} completed={this.state.completed} completeToDoList={this.completeToDoList} delToDoList={this.delToDoList}/>
